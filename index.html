@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Demo page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="mobile-container">
+    <div class="topnav">
+        <a href="#home" class="active">Admin Page</a>
+        <div id="myLinks">
+          <ul class="nav navbar-nav">
+            <li class="menu-item">
+              <a class="menu-mobile"  href="#" onclick="loadPage('Dashboard.html', event)">
+                <i class="menu-icon fa fa-dashboard"></i>
+              Dashboard
+            </a>
+            </li>
+            <h3 class="menu-title">PAGES</h3>
+            <li class="menu-item menu-has-child">
+              <a>
+                <i class="menu-icon fa fa-book"></i>
+                Home Page
+              </a>
+              <ul class="sub-menu child-dropdown">
+                <li>
+                  <a >
+                    <i class="menu-icon fa fa-puzzle-piece"></i>
+                  Top Row
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="menu-icon fa fa-id-card-o"></i>
+                  Banners
+                </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="menu-icon fa fa-fire"></i>
+                  Speciality
+                </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="menu-icon fa fa-id-badge"></i>
+                  About Us
+                </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="menu-icon fa fa-bars"></i>
+                  Services
+                </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="menu-icon fa fa fa-th"></i>
+                  Service Counts
+                </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="menu-icon fa fa-book"></i>
+                  Why Us
+                </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="menu-icon fa fa-id-card-o"></i>
+                  Testimonials
+                </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-has-child">
+              <a>
+                <i class="menu-icon fa fa-id-badge"></i>
+              About Us
+            </a>
+            <ul class="sub-menu child-dropdown">
+              <li>
+                <a href="#" onclick="loadPage('AboutUS/Banner.html', event)">
+                  <i class="menu-icon fa fa-id-card-o"></i>
+                Banner
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="loadPage('AboutUS/Details.html', event)">
+                  <i class="menu-icon fa fa-id-card-o"></i>
+                Details
+              </a>
+              </li>
+            </ul>
+            </li>
+            <li class="menu-item menu-has-child">
+              <a>
+                <i class="menu-icon fa fa-bars"></i>
+              Services
+            </a>
+            <ul class="sub-menu child-dropdown">
+              <li>
+                <a>
+                  <i class="menu-icon fa fa-id-card-o"></i>
+                Banner
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="menu-icon fa fa-id-card-o"></i>
+                Details
+              </a>
+              </li>
+            </ul>
+            </li>
+            <li class="menu-item menu-has-child">
+              <a>
+                <i class="menu-icon fa fa-th"></i>
+              Our Works
+            </a>
+            <ul class="sub-menu child-dropdown">
+              <li>
+                <a>
+                  <i class="sub-menu-icon fa fa-table"></i>
+                Banner
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="sub-menu-icon fa fa-spinner"></i>
+                Image Gallery
+              </a>
+              </li>
+            </ul>
+            </li>
+            <li class="menu-item menu-has-child">
+              <a>
+                <i class="menu-icon fa fa-book"></i>
+              Contact Us
+            </a>
+            <ul class="sub-menu child-dropdown">
+              <li>
+                <a>
+                  <i class="sub-menu-icon fa fa-table"></i>
+                Banner
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="sub-menu-icon fa fa-book"></i>
+                Details
+              </a>
+              </li>
+            </ul>
+            </li>
+            <li class="menu-item">
+              <a>
+                <i class="menu-icon fa fa-file-word-o"></i>
+              Footer
+            </a>
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <div class="main-container">
+         <div class="side-panel">
+            <header class="side-panel-header">
+              <a class="admin-title">Admin Page</a>
+              <ul class="nav navbar-nav">
+                <li class="menu-item">
+                  <a href="#" onclick="loadPage('Dashboard.html', event)">
+                    <i class="menu-icon fa fa-dashboard"></i>
+                  Dashboard
+                </a>
+                </li>
+                <h3 class="menu-title">PAGES</h3>
+                <li class="menu-item menu-has-child">
+                  <a>
+                    <i class="menu-icon fa fa-book"></i>
+                    Home Page
+                  </a>
+                  <ul class="sub-menu child-dropdown">
+                    <li>
+                      <a >
+                        <i class="sub-menu-icon fa fa-puzzle-piece"></i>
+                      Top Row
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i class="sub-menu-icon fa fa-id-card-o"></i>
+                      Banners
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i class="sub-menu-icon fa fa-fire"></i>
+                      Speciality
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i class="sub-menu-icon fa fa-id-badge"></i>
+                      About Us
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i class="sub-menu-icon fa fa-bars"></i>
+                      Services
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i class="sub-menu-icon fa fa-th"></i>
+                      Service Counts
+                    </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i class="sub-menu-icon fa fa-book"></i>
+                      Why Us
+                    </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-has-child">
+                  <a>
+                    <i class="menu-icon fa fa-id-card-o"></i>
+                  About Us
+                </a>
+                <ul class="sub-menu child-dropdown">
+                  <li>
+                    <a href="#" onclick="loadPage('AboutUS/Banner.html', event)">
+                      <i class="sub-menu-icon fa fa-table"></i>
+                    Banner
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="loadPage('AboutUS/Details.html', event)">
+                      <i class="sub-menu-icon fa fa-book"></i>
+                    Details
+                  </a>
+                  </li>
+                </ul>
+                </li>
+                <li class="menu-item menu-has-child">
+                  <a>
+                    <i class="menu-icon fa fa-fire"></i>
+                  Services
+                </a>
+                <ul class="sub-menu child-dropdown">
+                  <li>
+                    <a>
+                      <i class="sub-menu-icon fa fa-table"></i>
+                    Banner
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <i class="sub-menu-icon fa fa-book"></i>
+                    Details
+                  </a>
+                  </li>
+                </ul>
+                </li>
+                <li class="menu-item menu-has-child">
+                  <a>
+                    <i class="menu-icon fa fa-th"></i>
+                  Our Works
+                </a>
+                <ul class="sub-menu child-dropdown">
+                  <li>
+                    <a>
+                      <i class="sub-menu-icon fa fa-table"></i>
+                    Banner
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <i class="sub-menu-icon fa fa-spinner"></i>
+                    Image Gallery
+                  </a>
+                  </li>
+                </ul>
+                </li>
+                <li class="menu-item menu-has-child">
+                  <a>
+                    <i class="menu-icon fa fa-book"></i>
+                  Contact Us
+                </a>
+                <ul class="sub-menu child-dropdown">
+                  <li>
+                    <a>
+                      <i class="sub-menu-icon fa fa-table"></i>
+                    Banner
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <i class="sub-menu-icon fa fa-book"></i>
+                    Details
+                  </a>
+                  </li>
+                </ul>
+                </li>
+                <li class="menu-item">
+                  <a>
+                    <i class="menu-icon fa fa-file-word-o"></i>
+                  Footer
+                </a>
+                </li>
+              </ul>
+            </header>
+         </div>
+         <div class="content-panel">
+            <header class="user-info">
+              <div class="grid-item-1"></div>
+              <div class="grid-item-2">
+                <img width="32px" class="admin-img" src="./assets/admin.jpg"/>
+              </div>
+            </header>
+            <div id="load-content">
+
+            </div>
+         </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
